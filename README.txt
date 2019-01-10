@@ -34,7 +34,7 @@
         sudo timedatectl set-timezone Asia/Yekaterinburg
 11.Смена раскладки с Британской на Американскую.
         sudo dpkg-reconfigure keyboard-configuration
-  В появившемся окошке нажимаем Enter, чтобы выбрать пункт по-умолчанию "Common 105-keyboard"
+  В появившемся окошке нажимаем Enter, чтобы выбрать пункт по-умолчанию "Generic 105-key (Intl) PC"
   После в новом окошке выбираем пункт "Other" в самом низу, затем ищем пункт "English (US)", и после выбираем "English (US)" в самом верху.
   Во всех последующих окошках нажимаем Enter.
 12.Устанавливаем и добавляем в автозагрузку VNC и SSH.
