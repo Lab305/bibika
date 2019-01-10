@@ -39,7 +39,7 @@
   Во всех последующих окошках нажимаем Enter.
 12.Устанавливаем и добавляем в автозагрузку VNC и SSH.
   Устанавливаем VNC.
-         sudo apt install real-vnc-server -y
+         sudo apt install realvnc-vnc-server -y
   Добавляем VNC и SSH в автозагрузку.
          sudo systemctl enable vncserver-virtuald ssh
          sudo systemctl start vncserver-virtuald ssh
