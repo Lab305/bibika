@@ -142,9 +142,9 @@
 30.Настройка точки доступа WIFI.
   Копируем файлы из папки hostapd в папку с настройками точки доступа
        sudo cp hostapd/* /etc/hostapd/
-31.Подлючим конфигурационный файл hostapd.conf
+31.Подключим конфигурационный файл hostapd.conf
   Копируем файл hostapd (1) в директорию /etc/default/
-       sudo co hostapd\ \(1\) /etc/default/
+       sudo cp hostapd\ \(1\) /etc/default/
 32.Добавим службы dnsmasq и hostapd в автозагрузку.
        sudo systemctl enable dnsmasq hostapd
 33.Переместим программы работы с бибикой и камерой.
