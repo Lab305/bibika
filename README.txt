@@ -144,7 +144,7 @@
        sudo cp hostapd/* /etc/hostapd/
 31.Подключим конфигурационный файл hostapd.conf
   Копируем файл hostapd (1) в директорию /etc/default/
-       sudo cp hostapd\ \(1\) /etc/default/
+       sudo mv hostapd\ \(1\) /etc/default/hostapd
 32.Добавим службы dnsmasq и hostapd в автозагрузку.
        sudo systemctl enable dnsmasq hostapd
 33.Переместим программы работы с бибикой и камерой.
@@ -160,8 +160,8 @@
   Должны вывестись 3 интерфейса, один из которых wlan0 с адресом 192.168.4.1
 39.Изменим команды сборки для программы.
   Отроем в Geany файл server.cpp по пути /home/pi/server.cpp и изменим команды сборки на следующие:
-       g++ -Wall -c "%f" -lbmc2835 -lAura -lwiringPi -lm -pthread
-       g++ -Wall -o "%e" "%f" -lbmc2835 -lAura -lwiringPi -lm -pthread  
+       g++ -Wall -c "%f" -lbcm2835 -lAura -lwiringPi -lm -pthread
+       g++ -Wall -o "%e" "%f" -lbcm2835 -lAura -lwiringPi -lm -pthread  
 38.Выключаем стенд и переносим SD-карту в Машинку.
 39.Далее проводим первоначальную настройку для клиентской машины. Для этого нужно произвести настройку ещё одной SD-карты до 26 пункта.
 40.Устанавливаем программу удалённого управления компьютером VNC-Viewer.
