@@ -172,8 +172,8 @@
 42.Копируем файлы клиентской программы в домашнюю директорию.
        cp bibika/client/client* ./
 43.Открываем в Geany файл client.cpp и изменяем команды сборки:
-       g++ -Wall -c "%f" -lbmc2835 -lAura -lwiringPi -lm -pthread
-       g++ -Wall -o "%e" "%f" -lbmc2835 -lAura -lwiringPi -lm -pthread
+       g++ -Wall -c "%f" -lbcm2835 -lAura -lwiringPi -lm -pthread
+       g++ -Wall -o "%e" "%f" -lbcm2835 -lAura -lwiringPi -lm -pthread
 44.Подключаемся к настроенной точке доступа на машинке.
   Включаем машинку и ждём до тех пор, пока не появится новая WiFi-сеть с именем Gonka.
   Нажимаем на значок двух стрелочек вверху-слева и нажимаем в появившейся влкладке "Turn On Wi-Fi".
