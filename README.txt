@@ -123,7 +123,7 @@
        }
   Скомпилируем, собирём и запустим программу. В эмуляторе терминала должна вывестись температура с датчика температуры.
 27.Установим утилиты dnsmasq и hostapd
-       sudo apt insatll dnsmasq hostapd -y
+       sudo apt install dnsmasq hostapd -y
 28.Подготовим интерфейс беспроводной сети. Зайдём в файл /etc/dhcpcd.conf.
        nano /etc/dhcpcd.conf
   Допишем в конец строчки:
