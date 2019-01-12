@@ -129,7 +129,7 @@
   Допишем в конец строчки:
        interface wlan0
        static ip_address=192.168.4.1/24
-       nokook wpa_supplicant
+       nohook wpa_supplicant
 29.Настроим DHCP-сервер.
   Сохраняем оригинальный файл dnsmasq.conf
        sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
