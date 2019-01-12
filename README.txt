@@ -113,8 +113,8 @@
 26.Проверим работу библиотек.
   Отроем Geany и нажимаем клавишесочетание "Ctrl+S", чтобы сохранить файл. Файл называем test.c 
   Затем нажимаем по вкладке "Сборка", выбирем пункт "Установить команды сборки" и редактируем строчки до следующего состояния:
-       gcc -Wall -c "%f" -lbmc2835 -lAura -lwiringPi -lm -pthread
-       gcc -Wall -o "%e" "%f" -lbmc2835 -lAura -lwiringPi -lm -pthread
+       gcc -Wall -c "%f" -lbcm2835 -lAura -lwiringPi -lm -pthread
+       gcc -Wall -o "%e" "%f" -lbcm2835 -lAura -lwiringPi -lm -pthread
   Теперь напишем программу:
        #include <stdio.h>
        #include <Aura.h>
